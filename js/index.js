@@ -1,12 +1,18 @@
-var input = document.getElementById("value")
+var input1 = document.getElementById("value1")
+var input2 = document.getElementById("value2")
 var button = document.getElementById("send-btn")
-console.log(button)
-button.addEventListener("click", function(){
-  const value = Number(input.value)
-  console.log(value);
-  if(value % 2 === 0){
-    console.log('ce nombre est paire ')
-  } else{
-    console.log('ce nombre est impaire ')
-  }
-});
+
+button.addEventListener("click", function () {
+    const value1 = Number(input1.value)
+    const value2 = Number(input2.value)
+
+    console.log(input1)
+
+    console.log('le produit ' + value1 + '*' + value2 + 'est  :')
+
+    if (value1 * value2 <= 0) {
+        console.log('negatif ')
+    } else {
+        console.log('positif')
+    }
+}); 
