@@ -1,28 +1,35 @@
-var input1 = document.getElementById("value1")
-var input2 = document.getElementById("value2")
-var button = document.getElementById("send-btn")
+const inputNom = document.getElementById("nom")
+const inputGenre = document.getElementById("genre")
+const inputHeure = document.getElementById("heure")
+const button = document.getElementById("send-btn")
 
-button.addEventListener("click", function () {
+button.addEventListener("click", myListener);
+
+
+function myListener() {
 
     // const tab = ["0", "janvier", "fevrier", "mars" , "avril", "mai", "juin", "juillet", "aout", "septembre" ,"octobre", "novembre" , "decembre"] 
-   
-   const value1 = Number(input1.value)
 
-   while( value1 < 0) {
-      console.log("veiller saisir un positif number" )
-   break
- }
+    const valueHeure = Number(inputHeure.value)
+    const valueGenre = inputGenre.value.toUpperCase()
+    const valueNom = inputNom.value
 
-   for ( let i = 1; i <= value1; i++){
-      let np = 0
-      for (  let k = 1; k <= i; k++){
-         if ( i % k == 0)
-         np++;
-      } if ( np  === 2 ){
-        console.log( "ce nombre est premier")
-      } else {
-        console.log( "ce nombre n'est pas premier")
-      }
-   }
-  
-}); 
+    if (valueGenre === "M") {
+        afficheMessage("Mr", valueHeure, valueNom);
+    } else if (valueGenre === "F") {
+        afficheMessage("Mme", valueHeure, valueNom);
+    } else {
+        console.log("les donnees entrees sont invalides")
+    }
+
+}
+
+function afficheMessage(genre, heure, nom) {
+    if (heure >= 5 && heure <= 12) {
+        console.log(`Bonjour ${genre} ${nom}`)
+    } else if (heure >= 12 && heure <= 15) {
+        console.log("bonne apres midi " + genre + " " + nom)
+    } else {
+        console.log("bonsoir " + genre + " " + nom)
+    }
+}
