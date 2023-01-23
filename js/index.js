@@ -1,35 +1,34 @@
-const inputNom = document.getElementById("nom")
-const inputGenre = document.getElementById("genre")
-const inputHeure = document.getElementById("heure")
+const inputfirstNumber = document.getElementById("firstNumber")
+const inputsecondNumber = document.getElementById("secondNumber")
+const inputoperateur = document.getElementById("operateur")
 const button = document.getElementById("send-btn")
 
-button.addEventListener("click", myListener);
+button.addEventListener("click", function () {
+    const valuefirstNumber = Number(inputfirstNumber.value)
+    const valuesecondNumber = Number(inputsecondNumber.value)
+    const valueoperateur = inputoperateur.value
 
+    Operateur(valuefirstNumber, valueoperateur, valuesecondNumber);
 
-function myListener() {
+});
 
-    // const tab = ["0", "janvier", "fevrier", "mars" , "avril", "mai", "juin", "juillet", "aout", "septembre" ,"octobre", "novembre" , "decembre"] 
+function Operateur(valuefirstNumber, valueoperateur, valuesecondNumber) {
+    if (valueoperateur === "+" || valueoperateur === "-" || valueoperateur === "*" || valueoperateur === "/"){
 
-    const valueHeure = Number(inputHeure.value)
-    const valueGenre = inputGenre.value.toUpperCase()
-    const valueNom = inputNom.value
-
-    if (valueGenre === "M") {
-        afficheMessage("Mr", valueHeure, valueNom);
-    } else if (valueGenre === "F") {
-        afficheMessage("Mme", valueHeure, valueNom);
-    } else {
-        console.log("les donnees entrees sont invalides")
+        if (valueoperateur === "+") {
+            console.log(valuefirstNumber + valuesecondNumber)
+        }
+        if (valueoperateur === "-") {
+            console.log(valuefirstNumber - valuesecondNumber)
+        }
+        if (valueoperateur === "*") {
+            console.log(valuefirstNumber * valuesecondNumber)
+        }
+        if (valueoperateur === "/") {
+            console.log(valuefirstNumber / valuesecondNumber)
+        }
+    } else{
+        console.log("veuiller entrer un operateur valide")
     }
-
-}
-
-function afficheMessage(genre, heure, nom) {
-    if (heure >= 5 && heure <= 12) {
-        console.log(`Bonjour ${genre} ${nom}`)
-    } else if (heure >= 12 && heure <= 15) {
-        console.log("bonne apres midi " + genre + " " + nom)
-    } else {
-        console.log("bonsoir " + genre + " " + nom)
-    }
+    
 }
