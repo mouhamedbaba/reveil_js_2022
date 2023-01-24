@@ -25,14 +25,21 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-start h-100 py-5 mt-5">
-        <div class="form-control form-inline h-100 d-flex justify-content-start">
-                <input type="number" id="firstNumber">
-                <input type="text" id="operateur"> 
-                <input type="number" id="secondNumber">
-                <button class="btn btn-danger" id="send-btn"> submit</button>
+    <form class="container py-5 mt-5">
+        <div class="mb-3">
+          <label for="firstNumber" class="form-label">Fisrt Number</label>
+          <input type="number" class="form-control" id="firstNumber" >
         </div>
-    </div>
+        <div class="mb-3">
+            <label for="operateur" class="form-label">operateur</label>
+            <input type="text" class="form-control" id="operateur" >
+          </div>
+        <div class="mb-3">
+          <label for="secondNumber" class="form-label">Psecond Number</label>
+          <input type="number" class="form-control" id="secondNumber">
+        </div>
+        <button type="submit" class="btn btn-primary" id="send-btn">Submit</button>
+      </form>
 
 
     <script src="js\index.js"></script>

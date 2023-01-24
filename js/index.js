@@ -7,28 +7,21 @@ button.addEventListener("click", function () {
     const valuefirstNumber = Number(inputfirstNumber.value)
     const valuesecondNumber = Number(inputsecondNumber.value)
     const valueoperateur = inputoperateur.value
-
-    Operateur(valuefirstNumber, valueoperateur, valuesecondNumber);
-
+          
 });
-
-function Operateur(valuefirstNumber, valueoperateur, valuesecondNumber) {
-    if (valueoperateur === "+" || valueoperateur === "-" || valueoperateur === "*" || valueoperateur === "/"){
-
-        if (valueoperateur === "+") {
-            console.log(valuefirstNumber + valuesecondNumber)
-        }
-        if (valueoperateur === "-") {
-            console.log(valuefirstNumber - valuesecondNumber)
-        }
-        if (valueoperateur === "*") {
-            console.log(valuefirstNumber * valuesecondNumber)
-        }
-        if (valueoperateur === "/") {
-            console.log(valuefirstNumber / valuesecondNumber)
-        }
-    } else{
-        console.log("veuiller entrer un operateur valide")
-    }
-    
+function somme (){
+  const somme = valuefirstNumber + valuesecondNumber
+    console.log(somme)
+}
+function soustraction (){
+  const  soustraction = valuefirstNumber - valuesecondNumber
+    console.log(soustraction)
+}
+function produit (){
+  const produi = valuefirstNumber * valuesecondNumber
+    console.log(produi)
+}
+function modulo (){
+  const  modulo = valuefirstNumber % valuesecondNumber
+    console.log(modulo)
 }
