@@ -4,30 +4,46 @@ const inputfirstNumber = document.getElementById("firstNumber")
 const button = document.getElementById("send-btn")
 
 button.addEventListener("click", function (e) {
-    const valuefirstNumber = Number(inputfirstNumber.value)
-    // const valuesecondNumber = Number(inputsecondNumber.value)
-    // const valueoperateur = inputoperateur.value
-    e.preventDefault()
-       let resturnAge =  Age (valuefirstNumber) 
-       console.log(resturnAge)
-       MajouMin (resturnAge)
-});
- function Age (valuefirstNumber){
-    const age = 2023 - valuefirstNumber
-    if (valuefirstNumber < 2023) {
-        return age
-        console.log("Vous avez " + age + " ans ")
-    } else if (valuefirstNumber === 2023) {
-         console.log("vous venez tous juste de naitre")
-    } else {
-        console.log("vous ne  pouvez pas etre nee apres 2023 quand meme !")
-    }
- }
+    e.preventDefault();
+    const valuefirstNumber = inputfirstNumber.value
+    const full_caract = valuefirstNumber.split("")
+    const number_split = full_caract.length
+    let chiffre1
+    let chiffre2 
+    let operateur
+    if (number_split == 3){
+        chiffre1 = Number(full_caract[0])
+        chiffre2 = Number(full_caract[2])
+        operateur = full_caract[1]
 
- function MajouMin (resturnAge){
-    if(resturnAge < 18 ){
-        console.log("vous etes mineur ")
-    } else{
-        console.log("vous etes majeur ")
+    } else if (number_split == 5){
+        chiffre1 = Number(full_caract[0])
+        chiffre2 = Number(full_caract[4])
+        operateur = full_caract[2]
     }
- }
+
+    
+
+    if (operateur === "+") {
+        const somme = chiffre1 + chiffre2
+        console.log(somme)
+    }
+    if (operateur === "-") {
+        const somme = chiffre1 - chiffre2
+        console.log(somme)
+    }
+    if ( operateur === "*") {
+        const somme = chiffre1 * chiffre2
+        console.log(somme)
+    }
+    if (operateur === "/") {
+        const somme = chiffre1 / chiffre2
+        console.log(somme)
+    }
+    if (operateur === "%") {
+        const somme = chiffre1 % chiffre2
+        console.log(somme)
+    }
+
+
+});
