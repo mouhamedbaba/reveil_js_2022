@@ -10,6 +10,7 @@ button.addEventListener("click", function (e) {
     e.preventDefault()
        let resturnAge =  Age (valuefirstNumber) 
        console.log(resturnAge)
+       MajouMin (resturnAge)
 });
  function Age (valuefirstNumber){
     const age = 2023 - valuefirstNumber
@@ -20,5 +21,13 @@ button.addEventListener("click", function (e) {
          console.log("vous venez tous juste de naitre")
     } else {
         console.log("vous ne  pouvez pas etre nee apres 2023 quand meme !")
+    }
+ }
+
+ function MajouMin (resturnAge){
+    if(resturnAge < 18 ){
+        console.log("vous etes mineur ")
+    } else{
+        console.log("vous etes majeur ")
     }
  }
