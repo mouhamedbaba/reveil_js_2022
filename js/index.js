@@ -21,9 +21,9 @@ button.addEventListener("click", function (e) {
         chiffre2 = Number(full_caract[4])
         operateur = full_caract[2]
     }
-
-    
-
+    Operation (operateur, chiffre1, chiffre2)
+});
+function Operation (operateur, chiffre1, chiffre2){
     if (operateur === "+") {
         const somme = chiffre1 + chiffre2
         console.log(somme)
@@ -44,6 +44,4 @@ button.addEventListener("click", function (e) {
         const somme = chiffre1 % chiffre2
         console.log(somme)
     }
-
-
-});
+}
