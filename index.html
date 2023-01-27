@@ -23,12 +23,56 @@
   <!-- Font Awesome -->
 
 </head>
+ <style>
+  .calculator {
+  width: 360px;
+  height: 550px;
+  margin: 0 auto;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
 
+.calculator-screen {
+  background-color: #fff;
+  color: #000;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  text-align: right;
+  font-size: 2em;
+  /* border-radius: 10px; */
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  font-size: 2em;
+  margin: 0 5px 5px 0;
+  float: left;
+}
+
+.number {
+  background-color: #fff;
+  color: #000;
+}
+
+.operator {
+  background-color: #ddd;
+  color: #000;
+}
+
+.equal {
+  background-color: #00c;
+  color: #fff;
+}
+ </style>
 <body>
   <form class="container py-5 mt-5">
     <div class="mb-3">
       <label for="firstNumber" class="form-label">votre date de naissance</label>
-      <input type="text" class="form-control" id="firstNumber">
+      <!-- <input type="" id="firstNumber" > -->
     </div>
     <!-- <div class="mb-3">
             <label for="operateur" class="form-label">operateur</label>
@@ -38,7 +82,31 @@
           <label for="secondNumber" class="form-label">second Number</label>
           <input type="number" class="form-control" id="secondNumber">
         </div> -->
-    <button type="submit" class="btn btn-primary" id="send-btn">Submit</button>
+    <!-- <button type="submit" class="btn btn-primary" id="send-btn" onclick="Operation('operateur, chiffre1, chiffre2, somme')">Submit</button> -->
+    <div class="container py-5 d-flex justify-content-center pt-4">
+      
+      <div class="calculator py-5 pt-5 ">
+        <input type="" id="firstNumber" class="w-100" >
+        <div class="calculator-screen" id="text"></div>
+        <button class="btn number">1</button>
+        <button class="btn number">2</button>
+        <button class="btn number">3</button>
+        <button class="btn operator">+</button>
+        <button class="btn number">4</button>
+        <button class="btn number">5</button>
+        <button class="btn number">6</button>
+        <button class="btn operator">-</button>
+        <button class="btn number">7</button>
+        <button class="btn number">8</button>
+        <button class="btn number">9</button>
+        <button class="btn operator">*</button>
+        <button class="btn number">.</button>
+        <button class="btn number">0</button>
+        <button class="btn equal" type="submit"id="send-btn" onclick="Operation('operateur, chiffre1, chiffre2, somme')">=</button>
+        <button class="btn operator">/</button>
+      </div>
+    </div>
+
   </form>
 
 

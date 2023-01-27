@@ -1,10 +1,10 @@
 const inputfirstNumber = document.getElementById("firstNumber")
-// const inputsecondNumber = document.getElementById("secondNumber")
-// const inputoperateur = document.getElementById("operateur")
+const inputsecondNumber = document.getElementById("secondNumber")
+const inputoperateur = document.getElementById("operateur")
 const button = document.getElementById("send-btn")
 
 button.addEventListener("click", function (e) {
-    e.preventDefault();
+  e.preventDefault();
     const valuefirstNumber = inputfirstNumber.value
     const full_caract = valuefirstNumber.split("")
     const number_split = full_caract.length
@@ -20,28 +20,30 @@ button.addEventListener("click", function (e) {
         chiffre1 = Number(full_caract[0])
         chiffre2 = Number(full_caract[4])
         operateur = full_caract[2]
-    }
+    } 
     Operation (operateur, chiffre1, chiffre2)
 });
-function Operation (operateur, chiffre1, chiffre2){
+function Operation (operateur, chiffre1, chiffre2) {
+    
     if (operateur === "+") {
         const somme = chiffre1 + chiffre2
-        console.log(somme)
+        document.getElementById("text").innerHTML = somme;
     }
     if (operateur === "-") {
         const somme = chiffre1 - chiffre2
-        console.log(somme)
+        document.getElementById("text").innerHTML = somme;
     }
     if ( operateur === "*") {
         const somme = chiffre1 * chiffre2
-        console.log(somme)
+        document.getElementById("text").innerHTML = somme;
     }
     if (operateur === "/") {
         const somme = chiffre1 / chiffre2
-        console.log(somme)
+        document.getElementById("text").innerHTML = somme;
     }
     if (operateur === "%") {
         const somme = chiffre1 % chiffre2
-        console.log(somme)
+        document.getElementById("text").innerHTML = somme;
     }
+   
 }
