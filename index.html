@@ -29,15 +29,20 @@
       
       <form class="container py-5 pt-5">
         <div class="mb-3">
-          <label for="firstNumber" class="form-label">Entrer un mot de passe</label>
-          <input type="text" class="form-control" id="firstNumber" >
-        </div>
-        <div class="mb-3">
-          <label for="secondNumber" class="form-label" >confirmer le mot de passe</label>
-          <input type="text" class="form-control" id="secondNumber">
-          <p id="verify"></p>
-        </div>
-        <button type="submit" class="btn btn-primary " id="send-btn">Submit</button>
+          <div class="row">
+            <h2><label for="texte" class="form-label fw-bold">entrer un message</label></h2>
+            <textarea type="text" class="form-control" id="texte"></textarea>
+          </div>
+          <div class="row ">
+            <div class="col-6">
+              <span id="print">0 / 150</span><span class="mx-5" id="reste">150 restant</span>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary my-2 d-flex justify-content-end" id="send-btn">Submit</button>
+            </div>
+          </div>
+         
+        
       </form>
 
 
