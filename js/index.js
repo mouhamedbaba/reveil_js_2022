@@ -1,49 +1,41 @@
 const inputfirstNumber = document.getElementById("firstNumber")
 const inputsecondNumber = document.getElementById("secondNumber")
-const inputoperateur = document.getElementById("operateur")
 const button = document.getElementById("send-btn")
 
 button.addEventListener("click", function (e) {
-  e.preventDefault();
     const valuefirstNumber = inputfirstNumber.value
-    const full_caract = valuefirstNumber.split("")
-    const number_split = full_caract.length
-    let chiffre1
-    let chiffre2 
-    let operateur
-    if (number_split == 3){
-        chiffre1 = Number(full_caract[0])
-        chiffre2 = Number(full_caract[2])
-        operateur = full_caract[1]
-
-    } else if (number_split == 5){
-        chiffre1 = Number(full_caract[0])
-        chiffre2 = Number(full_caract[4])
-        operateur = full_caract[2]
-    } 
-    Operation (operateur, chiffre1, chiffre2)
+    const valuesecondNumber = inputsecondNumber.value
+    // const valueoperateur = inputoperateur.value
+    e.preventDefault()
+    let return_password = motDePasse(valuefirstNumber)
+    verify(return_password, valuesecondNumber)
 });
-function Operation (operateur, chiffre1, chiffre2) {
-    
-    if (operateur === "+") {
-        const somme = chiffre1 + chiffre2
-        document.getElementById("text").innerHTML = somme;
-    }
-    if (operateur === "-") {
-        const somme = chiffre1 - chiffre2
-        document.getElementById("text").innerHTML = somme;
-    }
-    if ( operateur === "*") {
-        const somme = chiffre1 * chiffre2
-        document.getElementById("text").innerHTML = somme;
-    }
-    if (operateur === "/") {
-        const somme = chiffre1 / chiffre2
-        document.getElementById("text").innerHTML = somme;
-    }
-    if (operateur === "%") {
-        const somme = chiffre1 % chiffre2
-        document.getElementById("text").innerHTML = somme;
-    }
-   
+
+function motDePasse(valuefirstNumber) {
+    return valuefirstNumber
 }
+function verify(return_password, valuesecondNumber) {
+    if (return_password === '' && valuesecondNumber === '') {
+        document.getElementById("secondNumber").style.borderColor = "red";
+        document.getElementById("firstNumber").style.borderColor = "red";
+        document.getElementById("verify").innerHTML = "les champ sont vides";
+        document.getElementById("verify").style.color = "red";
+
+    } else if (return_password === valuesecondNumber) {
+        console.log(" mot de passe correct")
+        document.getElementById("secondNumber").style.borderColor = "green";
+        document.getElementById("firstNumber").style.borderColor = "green";
+        document.getElementById("verify").innerHTML = "mot de passe valide";
+        document.getElementById("verify").style.color = "green";
+    } else {
+        console.log(" le mot de passe ne corespond pas au premier")
+        document.getElementById("secondNumber").style.borderColor = "red";
+        document.getElementById("firstNumber").style.borderColor = "red";
+        document.getElementById("verify").innerHTML = "les mots de passes ne corespondent pas";
+        document.getElementById("verify").style.color = "red";
+
+    }
+}
+
+
+
