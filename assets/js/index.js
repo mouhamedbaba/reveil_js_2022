@@ -1,15 +1,10 @@
-const card = document.getElementById("card")
-const ElementHtml = `<div class="col-6">
-<div class="container card py-5 my-5">
-  <div class="img-head"> <img src="https://source.unsplash.com/random/200x200?sig=2" /></div>
-  <div class="title">card</div>
-  <div class="paragrphe">ceci est une carte fait avec html et css directement dans java script</div>
-  <div class="content">
-    <button class="button">submit</button>
-  </div>
-</div>
-</div>
-</div>`
+const liste = document.getElementById("liste")
+const Alphabet = ['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z' ]
+let valeur =  Alphabet
+for (var i = 0; i < 26; i++ ) {
+  console.log(i + Alphabet[i] )
+  const li = document.createElement("li")
+  li.innerHTML = Alphabet[i]
+  liste.appendChild(li)
+ }
  
-card.innerHTML = ElementHtml
-
