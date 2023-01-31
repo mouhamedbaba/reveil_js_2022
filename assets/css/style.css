@@ -1,0 +1,28 @@
+.card {
+    background-color: whitesmoke;
+    height: auto;
+    width: 240px;
+}
+.img-head {
+    margin-top: 2px;
+    position: center;
+}
+.title {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+.paragrphe{
+    color: black;
+    margin-top: 10px;
+}
+.button{
+    color: white;
+    background-color: orange;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
