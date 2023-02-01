@@ -1,10 +1,17 @@
 const input = document.getElementById("input")
-const button = document.getElementById("button")
+const display = document.getElementById("display")
+const table = []
 
-button.addEventListener("click", function (e){
-     const saisie = input.value
-     document.getElementById("t1").innerHTML = saisie
-  
-     e.preventDefault()
-});
-
+function AddTablelist(){ 
+  let i=0
+  do{
+    let saisie = prompt("enter queque chose ")
+    if (saisie != null) {
+      table.push(saisie)
+      console.log(table)
+    }
+     i++
+     console.log(i)
+  }while (i < 10)
+  display.innerHTML = table
+}
