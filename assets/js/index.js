@@ -22,6 +22,8 @@ function confirmNmbreUser() {
   nombres = document.getElementById("NombrDeUser")
   nombres = Number(nombres.value)
   if (nombres != 0) {
+    document.getElementById("NombrDeUser").disabled = true
+    document.getElementById("button").disabled = true
     modify (false, "green")
     document.getElementById("p").innerHTML = 0 + "/" + nombres
   } else {
