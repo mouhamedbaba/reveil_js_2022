@@ -40,6 +40,7 @@ function infoUser() {
     alert("tous les champs requis")
   } else { 
     tablesListes.push(userInfoObject)
+    i++
   }
   document.getElementById("form").reset()
     if(tablesListes.length === nombres){
@@ -52,6 +53,5 @@ function infoUser() {
         modify (true, "red")
       });
     }
-    i++
     document.getElementById("p").innerHTML = i + "/" + nombres
 } 
