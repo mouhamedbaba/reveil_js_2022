@@ -14,47 +14,63 @@
   <header class="py-4 my-4 d-flex justify-content-center  container">
     <h1 class="fw-bold">ENTER INFO </h1>
   </header>
-  <table class=" container d-flex justify-content-center" id="">
+  <table class=" container d-flex justify-content-center " id="">
     <tr>
-      <td id="tp" class=" d-flex justify-content-between bg-secondary">
-        <form id="formulaire">
+      <td id="tp" class=" d-flex justify-content-between shadow-lg p-3 mb-5 bg-body rounded">
+        <form id="" class="container  d-flex justify-content-end">
           <div class="mb-3">
-            <label for="Nom" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="Nom">
+            <label for="NombrDeUser" class="form-label">Nombre de User</label>
+            <input type="text" class="form-control" id="NombrDeUser">
+            <button type="button" class="btn btn-primary my-2 py-2 d-flex justify-content-end"
+              onclick="confirmNmbreUser()">Valider</button>
           </div>
-          <div class="mb-3">
-            <label for="Prenom" class="form-label">Prenom</label>
-            <input type="text" class="form-control" id="Prenom">
-          </div>
-          <div class="mb-3">
-            <label for="Age" class="form-label">Age</label>
-            <input type="number" class="form-control" id="Age">
-          </div>
-          <button type="button" class="btn btn-primary " onclick="infoUser()">Valider</button>
         </form>
       </td>
     </tr>
   </table>
-  <div class="container ">
-    <h1 class="fw-bold d-flex justify-content-center">INFOS USER</h1>
-    <div class="container bg-secondary ">
-      <div class="row">
-        <div class="col">
-          <ol id="ol">
-
-          </ol>
-        </div>
-        <div class="col d-flex justify-content-end">
-          
-        </div>
-      </div>
-
-     
+  </form>
+  <div class="row d-flex justify-content-rounded">
+    <div class="col-4">
+      <table class=" container d-flex justify-content-center " id="" aria-disabled="true">
+        <tr>
+          <td id="tp" class=" d-flex justify-content-between bg-secondary " aria-disabled="true">
+            <form id="form" class="">
+              <div class="mb-3">
+                <label for="Nom" class="form-label ">Nom</label>
+                <input type="text" class="form-control" id="Nom" style="border-color: red;" disabled>
+              </div>
+              <div class="mb-3">
+                <label for="Prenom" class="form-label">Prenom</label>
+                <input type="text" class="form-control" id="Prenom" style="border-color: red;" disabled>
+              </div>
+              <div class="mb-3">
+                <label for="Age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="Age" style="border-color: red;" disabled>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button type="button" id="btn" class="btn btn-danger " onclick="infoUser()" disabled>Valider</button>
+                </div>
+                <div class="col-6  d-flex justify-content-end">
+                  <p id="p"></p>
+                </div>
+              </div>
+            </form>
+          </td>
+        </tr>
+      </table>
     </div>
+    <div class="col-4">
+      <table class=" container d-flex justify-content-center " id="" aria-disabled="true">
+        <tr>
+          <td id="tp" class=" d-flex justify-content-between bg-secondary " aria-disabled="true">
+            <form id="" class="">
+              <ol id="ol"></ol>
+            </form>
+          </td>
+        </tr>
+      </table>
   </div>
-  </div>
-
   <script src="assets\js\index.js"></script>
 </body>
-
 </html>

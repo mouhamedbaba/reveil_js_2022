@@ -1,46 +1,57 @@
-const nom = document.getElementById("Nom")
-const prenom = document.getElementById("Prenom")
-const age = document.getElementById("Age")
-const tabUserListe = []
-function infoUser(event) {
-  const infoStock = {
-    "name": nom.value,
-    "secondName": prenom.value,
-    "old": Number(age.value)
-  }
-  if (infoStock.name === "" || infoStock.secondName === "" || infoStock.old === 0) {
-    alert("veuiller entrer tous les champ")
-  } else {
-    tabUserListe.push(infoStock)
-  }
-  // console.log(tabUserListe)
-  document.getElementById("ol").innerHTML = ""
-  // tabUserListe.forEach(function(user) {
-  //   const li = document.createElement("li")
-  //   li.innerHTML = user.name + " " +  user.secondName + " " +  user.old
-  //   document.getElementById("ol").appendChild(li)
-  // })
-  // let i = length.tabUserListe
-  // for (i = 0; i < 20; i++) {
-  //   const li = document.createElement("li")
-  //   li.innerHTML = tabUserListe[i].name + " " + tabUserListe[i].secondName + " " + tabUserListe[i].old
-  //   document.getElementById("ol").appendChild(li)
-  //   console.log(tabUserListe)
+const Nom = document.getElementById("Nom")
+const Prenom = document.getElementById("Prenom")
+const Age = document.getElementById("Age")
+const ol = document.getElementById("ol")
 
-  //   document.getElementById("formulaire").reset()
-  // }
-
-  tabUserListe.forEach(tab => {
-    const li = document.createElement("li")
-    li.innerHTML = tab.name + " " + tab.secondName + " " + tab.old
-    document.getElementById("ol").appendChild(li)
-    console.log(tab)
-
-    document.getElementById("formulaire").reset()
-
-  });
-
-  // const li = document.createElement("li")
-  // li.innerHTML = tabUserListe[1].name + " " +  tabUserListe[1].secondName + " " +  tabUserListe[1].old
-  // document.getElementById("ol").appendChild(li)
+function modify (TrorOrfalse, color) {
+  document.getElementById("Nom").disabled = TrorOrfalse;
+  document.getElementById("Nom").style.borderColor = color;
+  document.getElementById("Prenom").disabled = TrorOrfalse;
+  document.getElementById("Prenom").style.borderColor = color;
+  document.getElementById("Age").disabled = TrorOrfalse;
+  document.getElementById("Age").style.borderColor = color;
+  document.getElementById("btn").disabled = TrorOrfalse;
+  document.getElementById("btn").style.backgroundColor = color;
+  document.getElementById("btn").style.borderColor = color;
 }
+
+const tablesListes = []
+
+
+function confirmNmbreUser() {
+  nombres = document.getElementById("NombrDeUser")
+  nombres = Number(nombres.value)
+  if (nombres != 0) {
+    modify (false, "green")
+    document.getElementById("p").innerHTML = 0 + "/" + nombres
+  } else {
+    alert("veuiller aisir le nombre de user")
+  }
+}
+let i =0 
+function infoUser() {
+  const userInfoObject = {
+    "name": Nom.value,
+    "secondName": Prenom.value,
+    "age": Age.value
+  }
+
+  if (Nom.value === "" || Prenom.value === "" || Age.value === 0) {
+    alert("tous les champs requis")
+  } else { 
+    tablesListes.push(userInfoObject)
+  }
+  document.getElementById("form").reset()
+    if(tablesListes.length === nombres){
+      ol.innerHTML = ""
+      tablesListes.forEach(tablesListe => {
+        const li = document.createElement("li")
+        li.innerHTML = tablesListe.name + " " + tablesListe.secondName + " " + tablesListe.age + " ans"   
+         console.log(tablesListe)
+        ol.appendChild(li)
+        modify (true, "red")
+      });
+    }
+    i++
+    document.getElementById("p").innerHTML = i + "/" + nombres
+} 
