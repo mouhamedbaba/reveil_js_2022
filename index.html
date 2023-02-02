@@ -17,7 +17,7 @@
   <table class=" container d-flex justify-content-center" id="">
     <tr>
       <td id="tp" class=" d-flex justify-content-between bg-secondary">
-        <form>
+        <form id="formulaire">
           <div class="mb-3">
             <label for="Nom" class="form-label">Nom</label>
             <input type="text" class="form-control" id="Nom">
@@ -30,19 +30,28 @@
             <label for="Age" class="form-label">Age</label>
             <input type="number" class="form-control" id="Age">
           </div>
-          <button type="button" class="btn btn-primary " onclick="InfoUser()">Valider</button>
+          <button type="button" class="btn btn-primary " onclick="infoUser()">Valider</button>
         </form>
       </td>
     </tr>
   </table>
-  <div class="container py-2 my-2 gy-4">
-    <h1 class="fw-bold d-flex justify-content-center">DISPLAY INFO</h1>
-    <div class="container bg-secondary gy-4">
-          <h4 id="FirstName" class="py-2"></h4><br>
-          <h4 id="SecondName"></h4><br>
-          <h4 id="Old" class="mb-2"></h4>
+  <div class="container ">
+    <h1 class="fw-bold d-flex justify-content-center">INFOS USER</h1>
+    <div class="container bg-secondary ">
+      <div class="row">
+        <div class="col">
+          <ol id="ol">
+
+          </ol>
+        </div>
+        <div class="col d-flex justify-content-end">
+          
+        </div>
       </div>
+
+     
     </div>
+  </div>
   </div>
 
   <script src="assets\js\index.js"></script>
