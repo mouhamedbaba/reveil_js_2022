@@ -1,17 +1,21 @@
-const input = document.getElementById("input")
-const display = document.getElementById("display")
-const table = []
+const Nom = document.getElementById("Nom")
+const Prenom = document.getElementById("Prenom")
+const Age = document.getElementById("Age")
 
-function AddTablelist(){ 
-  let i=0
-  do{
-    let saisie = prompt("enter queque chose ")
-    if (saisie != null) {
-      table.push(saisie)
-      console.log(table)
-    }
-     i++
-     console.log(i)
-  }while (i < 10)
-  display.innerHTML = table
+function InfoUser(){
+
+  const InfoStock = {
+    "FirstName" : Nom.value,
+    "SecondName" : Prenom.value,
+    "Old" : Number(Age.value)
+  }
+
+  if (InfoStock.FirstName === "" || InfoStock.SecondName === "" || InfoStock.Old === null){
+    alert("veuiller entrer tous les champ")
+  } else{
+   document.getElementById("FirstName").innerHTML ="Nom : " + InfoStock.FirstName
+    document.getElementById("SecondName").innerHTML ="Prenom : " + InfoStock.SecondName
+    document.getElementById("Old").innerHTML ="Age : " + InfoStock.Old + " ans"
+  }
 }
+
