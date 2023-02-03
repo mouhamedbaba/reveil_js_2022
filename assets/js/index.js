@@ -21,9 +21,9 @@ const tablesListes = []
 function confirmNmbreUser() {
   nombres = document.getElementById("NombrDeUser")
   nombres = Number(nombres.value)
-  if (nombres != 0) {
+  if (nombres >= 1) {
     document.getElementById("NombrDeUser").disabled = true
-    document.getElementById("button").disabled = true
+    document.getElementById("refreshBtn").innerHTML = `<button type="button" class="btn btn-dark my-2 py-2" onClick= "window.location.reload()"><label for="NombrDeUser" class="form-label">Modifier</label></button>`
     modify (false, "green")
     document.getElementById("p").innerHTML = 0 + "/" + nombres
   } else {
@@ -32,6 +32,7 @@ function confirmNmbreUser() {
 }
 let i =0 
 function infoUser() {
+  const tablesListe = ""
   const userInfoObject = {
     "name": Nom.value,
     "secondName": Prenom.value,
