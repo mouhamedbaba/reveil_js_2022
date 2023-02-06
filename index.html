@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,69 +8,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets\css\style.css">
 </head>
-
 <body>
   <header class="py-4 my-4 d-flex justify-content-center  container">
-    <h1 class="fw-bold">ENTER INFO </h1>
+    <h1 class="fw-bold"></h1>
   </header>
   <table class=" container d-flex justify-content-center " id="">
     <tr>
       <td id="tp" class=" d-flex justify-content-between shadow-lg p-3 mb-5 bg-body rounded">
         <form id="" class="container  d-flex justify-content-end">
           <div class="mb-3">
-            <label for="NombrDeUser" class="form-label">Nombre de User</label>
-            <input type="number" class="form-control" id="NombrDeUser">
+            <H1 class=" d-flex justify-content-center fw-bold">REVEIL</H1>
+            <label for="heureDereiveil" class="form-label">HEURE</label>
+            <input type="number" class="form-control" id="heureDereveil">
+            <label for="minuteDereveil" class="form-label">MINUTE</label>
+            <input type="number" class="form-control" id="minuteDereveil">
+            <label for="secondDereveil" class="form-label">SECONDE</label>
+            <input type="number" class="form-control" id="secondDereveil">
             <div id="refreshBtn">
-              <button type="button" class="btn btn-primary my-2 py-2" onclick="confirmNmbreUser()" id="button">Valider</button>
+              <button type="button" class="btn btn-primary my-2 py-2"  id="send-btn">Valider</button>
             </div>
           </div>
         </form>
       </td>
     </tr>
   </table>
-  </form>
-  <div class="row d-flex justify-content-rounded">
-    <div class="col-4">
-      <table class=" container d-flex justify-content-center " id="">
-        <tr>
-          <td id="tp" class=" d-flex justify-content-between bg-secondary ">
-            <form id="form" class="">
-              <div class="mb-3">
-                <label for="Nom" class="form-label ">Nom</label>
-                <input type="text" class="form-control" id="Nom" style="border-color: red;" disabled>
-              </div>
-              <div class="mb-3">
-                <label for="Prenom" class="form-label">Prenom</label>
-                <input type="text" class="form-control" id="Prenom" style="border-color: red;" disabled>
-              </div>
-              <div class="mb-3">
-                <label for="Age" class="form-label">Age</label>
-                <input type="number" class="form-control" id="Age" style="border-color: red;" disabled>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <button type="button" id="btn" class="btn btn-danger " onclick="infoUser()" disabled>Valider</button>
-                </div>
-                <div class="col-6  d-flex justify-content-end">
-                  <p id="p"></p>
-                </div>
-              </div>
-            </form>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div class="col-4">
-      <table class=" container d-flex justify-content-center " id="">
-        <tr>
-          <td id="tp" class=" d-flex justify-content-between bg-secondary ">
-            <form id="" class="">
-              <ol id="ol"></ol>
-            </form>
-          </td>
-        </tr>
-      </table>
-  </div>
   <script src="assets\js\index.js"></script>
 </body>
 </html>
