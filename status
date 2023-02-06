@@ -1,0 +1,191 @@
+[33mcommit 00a300cbe80fedd7f0ffdaea6375618f030cda80[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Mon Feb 6 11:24:46 2023 +0000
+
+    timer control
+
+[33mcommit bb7276b5e8761b1c8d857c22e8b876e137aac31e[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Feb 3 00:31:04 2023 +0000
+
+    end
+
+[33mcommit 8bc39a4f45bd3a07db17af7ca1244ef20b65dd2f[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Thu Feb 2 22:28:09 2023 +0000
+
+    fix : disable input when all is done
+
+[33mcommit 5c052d80fd858ec2fa4345caaeead893f56cc253[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Thu Feb 2 22:11:42 2023 +0000
+
+    fix : replace i++
+
+[33mcommit ca4c9ac4537855d1e705d12ec2124bb01b83f40c[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Thu Feb 2 21:57:15 2023 +0000
+
+    control saisi et diplay apres que tous soit saisi
+
+[33mcommit 48a15c5beff4ae5bae1efca2866e186ff3b335c4[m[33m ([m[1;32mmbl[m[33m)[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Thu Feb 2 16:05:37 2023 +0000
+
+    enter  info of many user and display it using object
+
+[33mcommit d669b392a64ddc187a76f85e113879bc02f3795a[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Thu Feb 2 11:21:10 2023 +0000
+
+    enter info user and display it using object
+
+[33mcommit b08c91e138cf83ba2ca86cb9a40d7c8e6c3c89b5[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Wed Feb 1 12:58:29 2023 +0000
+
+    add saisi au tableau
+
+[33mcommit 146b7ccb140fe401fb08295eb65f9c8251c3a67a[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Wed Feb 1 11:25:35 2023 +0000
+
+    tableau html pas fini
+
+[33mcommit 9af8d3b3d68e330280fbdfe2c9910e9d9990c09f[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 31 17:05:45 2023 +0000
+
+    ol de l'alphabet
+
+[33mcommit a5d153511fadcefd261c1c1daad7d5367b353062[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 31 14:47:27 2023 +0000
+
+    carte avec le  html directement code  dans js
+
+[33mcommit d2aa2a03d7a1332bfa80bd266f6138d936da5c4e[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 31 14:40:51 2023 +0000
+
+    form avec 100% javScript decomenter et fin du processus
+
+[33mcommit e2676c0f77d68bfcd8f18ec3eba591eb39d98683[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 31 14:35:41 2023 +0000
+
+    form avec 100% javScript
+
+[33mcommit c9bbb0fe733abf3bdc695d12381310e5e41376f5[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 31 09:31:27 2023 +0000
+
+    end texterae control
+
+[33mcommit 926708fc484e4871b1954acdfeef9fe31a19bde9[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Mon Jan 30 16:53:23 2023 +0000
+
+    textarea control end
+
+[33mcommit 5a101c315a645e4a5e331f2d3dc812e255498199[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Mon Jan 30 15:36:19 2023 +0000
+
+    controle d'un textaera
+
+[33mcommit 903150896e2991dd7b9a9c55d3915798feab992f[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Mon Jan 30 12:05:34 2023 +0000
+
+    confirm password
+
+[33mcommit e4fac504c4e641a18f1e476f89911c4a1f1f7cb3[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 27 16:55:19 2023 +0000
+
+    calculator
+
+[33mcommit d7fbf76207b84124af5958c5fe7aaf00b4c47ba4[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 24 15:00:22 2023 +0000
+
+    avec function
+
+[33mcommit e4e0b9b5074f32520ce03c3b3fb0f8e65f55d879[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 24 13:46:40 2023 +0000
+
+     calcul sur un seul input sans fontion
+
+[33mcommit 3ee2a4a9e72eff58c56a12321ee75dc093734892[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 24 12:23:47 2023 +0000
+
+    puis dire si majeur ou mineur en utilisant return
+
+[33mcommit 40dd9170071a3c23b228f6480d32787b6be36cf0[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 24 11:54:33 2023 +0000
+
+    fontion pour dire l'age en fontion de la date de naissance
+
+[33mcommit fa37868330d37978bda9268e172337ae1eb25b14[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 24 11:31:01 2023 +0000
+
+    end de la fonction des operation
+
+[33mcommit 44c7c07fbfb280cf118a038205ba016001ef28e4[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Tue Jan 24 10:35:49 2023 +0000
+
+    funcyion sans parametres
+
+[33mcommit f65df64d5f331a2375663ce25fc4fb49a086b600[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Mon Jan 23 15:31:30 2023 +0000
+
+    Operateur avec if else
+
+[33mcommit 2fa22166069ddae979e134c117fc8949a1c33228[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Mon Jan 23 12:42:36 2023 +0000
+
+    functions
+
+[33mcommit 8d41ddd6070dc81fdf4ad8a147080c039bbe99a9[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 20 17:19:05 2023 +0000
+
+    exo non reuissi
+
+[33mcommit 046e5d6e885104255d00fbcb838509b86916bb22[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 20 16:24:13 2023 +0000
+
+    exo 6
+
+[33mcommit acb7bc54e426cb2f38dbf57a3dff6f2f1d36edda[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 20 15:42:19 2023 +0000
+
+    exo 5
+
+[33mcommit b2a0485e846d53db272cb5b6e0ccf49bce11ddda[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 20 12:58:11 2023 +0000
+
+    exo 3
+
+[33mcommit 83b63c3d14308faed6577d9508447d59ae64e585[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 20 12:25:05 2023 +0000
+
+    exo 2
+
+[33mcommit 1c378ff68f19377910a0ac91f67de8f376bb1dad[m
+Author: BABALAMOTTE <lamottelymouhamed@gmail.com>
+Date:   Fri Jan 20 11:56:13 2023 +0000
+
+    exo 1 java
