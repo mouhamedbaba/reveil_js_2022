@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SING-UP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
-<body class="my-0 mx-0">
+<body class="my-0 mx-0" id="">
     <div class="row mx-0 my-0">
         <div class="col-6">
             <?xml version="1.0" encoding="utf-8"?>
@@ -37,7 +39,7 @@
             </svg>
         </div>
         <div class="col-6 pt-5 my-5 py-5 container d-flex justify-content-center ">
-            <table class=" container d-flex justify-content-center py-5 my-5" id="">
+            <table class=" container d-flex justify-content-center py-5 my-5" id="popup">
                 <tr>
                     <td id="tp" class=" d-flex justify-content-between shadow-lg p-3 mb-5 bg-body rounded">
                         <form class="">
@@ -45,9 +47,9 @@
                             <div>
                                 <h1 class="form-head fw-bold text-primary">SING UP</h1>
                             </div>
-                            <div class="mb-3">     
-                            <label for="newEmail" class="form-label">Email address</label>     
-                            <input type="email" class="form-control" id="newEmail" aria-describedby="emailHelp">  
+                            <div class="mb-3">
+                                <label for="newEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="newEmail" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="newPassword" class="form-label">Password</label>
@@ -60,10 +62,31 @@
                             <div class="mb-3 form-check">
                             </div>
                             <div class="row">
-                                <div class="col"><button type="button" class="btn btn-primary"
-                                        id="sing_up-btn">CONNEXION</button></div>
+                                <div class="col"><button type="button" class="btn btn-primary" id="sing_up-btn"
+                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">CONNEXION</button></div>
                                 <div class="col"> <a href="D:\projets\informatique\JavaScript\auth\sing_in.html"
                                         style="color: green;">deja un compte</a></div>
+                                <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Understood</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
                         </form>
                     </td>
@@ -72,6 +95,11 @@
         </div>
     </div>
     <script src="../assets/js/sing_up.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>

@@ -14,6 +14,6 @@ btn.addEventListener("click", function (e){
     if (verifyEmail === email && verifypassword === password ){
         window.location.href = "D:/projets/informatique/JavaScript/index.html"
     } else{
-        alert("connection non reuissi")
+        alert("identifiants incorrectent")
         }
 });
